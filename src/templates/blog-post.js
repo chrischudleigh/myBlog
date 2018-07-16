@@ -7,18 +7,19 @@ class BlogPost extends Component {
         console.log(this.props)
         const { title, createdAt, content } = this.props.data.contentfulBlogPost
         return (
-            <div>
-                <h1 style={{
-                    borderBottom: '1px solid #ccc',
-                    paddingBottom: '0.5rem'
-                }}>
-                    {title}
-                </h1>
-                <p>{createdAt}</p>
-                
-                <hr />
-                <div dangerouslySetInnerHTML={{__html:content.childMarkdownRemark.html}} />
-            </div>
+
+   
+
+<div className="panel panel-default">
+  <div className="panel-heading">
+    <h3 className="panel-title">{title} - {createdAt}</h3>
+  </div>
+  <div className="panel-body" dangerouslySetInnerHTML={{__html:content.childMarkdownRemark.html}} />    
+</div>
+
+
+
+            
         )
     }
 }

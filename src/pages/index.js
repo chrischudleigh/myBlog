@@ -1,16 +1,19 @@
 import React from 'react';
 import Link from "gatsby-link";
+
 const BlogPost = ({node}) => {
     return (
-        <div style={{
-            marginBottom: '1.5rem',
-            padding: '1.5rem',
-            border: '1px solid #ccc'
-        }}>
-            <h3><Link to={node.slug}>{node.title}</Link></h3>
-            <p>{node.createdAt}</p>
-            <div>{node.content.childMarkdownRemark.excerpt}</div>
-        </div>
+
+<div className="panel p panel-info">
+  <div className="panel-heading">
+    <h3 className="panel-title"><Link to={node.slug}>{node.title}</Link></h3>
+  </div>
+  <div className="panel-body"> 
+  <p>{node.createdAt}</p>
+  <div>{node.content.childMarkdownRemark.excerpt}</div>
+</div>
+</div>
+      
     )
 }
 

@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 const SecondPage = () => (
   <div>
-    <h1>About Us</h1>
+    <h1>Contact Us</h1>
    
     <Link to="/">Go back to the homepage</Link>
   </div>
