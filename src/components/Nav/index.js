@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { LinkContainer } from 'react-router-bootstrap'
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 const myNav= () => (
   <Navbar collapseOnSelect>
@@ -11,8 +11,8 @@ const myNav= () => (
   </Navbar.Header>
   <Navbar.Collapse>
     <Nav>
-      <NavItem eventKey={1}><NavLink to="/page-2/">About</NavLink></NavItem>
-      <NavItem eventKey={2}><NavLink to="/page-3/">Contact-Us</NavLink></NavItem>
+    <LinkContainer to="/page-2/"><NavItem eventKey={1}>About</NavItem></LinkContainer>
+    <LinkContainer to="/page-3/"><NavItem eventKey={2}>Contact-Us</NavItem></LinkContainer>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
