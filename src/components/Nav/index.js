@@ -1,18 +1,18 @@
 import React from 'react'
-import LinkContainer from 'gatsby-link'
+import { NavLink } from 'react-router-dom'
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 const myNav= () => (
   <Navbar collapseOnSelect>
   <Navbar.Header>
-    <LinkContainer to="/" ><Navbar.Brand>
+    <Navbar.Brand href="#">
     Web Bytes
-    </Navbar.Brand></LinkContainer>
+    </Navbar.Brand>
     <Navbar.Toggle />
   </Navbar.Header>
   <Navbar.Collapse>
     <Nav>
-      <LinkContainer to="/page-2/"><NavItem eventKey={1}>About</NavItem></LinkContainer>
-      <LinkContainer to="/page-3/"><NavItem eventKey={2}>Contact-Us</NavItem></LinkContainer>
+      <NavItem eventKey={1}><NavLink to="/page-2/">About</NavLink></NavItem>
+      <NavItem eventKey={2}><NavLink to="/page-3/">Contact-Us</NavLink></NavItem>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
