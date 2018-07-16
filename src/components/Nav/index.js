@@ -5,7 +5,7 @@ const myNav= () => (
   <Navbar collapseOnSelect>
   <Navbar.Header>
     <Navbar.Brand>
-    <Link to="/">Web Bytes</Link>
+    <Link to="/index/">Web Bytes</Link>
     </Navbar.Brand>
     <Navbar.Toggle />
   </Navbar.Header>
