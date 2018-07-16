@@ -1,18 +1,18 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import LinkContainer from 'gatsby-link'
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 const myNav= () => (
   <Navbar collapseOnSelect>
   <Navbar.Header>
-    <Navbar.Brand>
-    <Link to="/">Web Bytes</Link>
-    </Navbar.Brand>
+    <LinkContainer to="/" ><Navbar.Brand>
+    Web Bytes
+    </Navbar.Brand></LinkContainer>
     <Navbar.Toggle />
   </Navbar.Header>
   <Navbar.Collapse>
     <Nav>
-      <NavItem eventKey={1}><Link to="/page-2/">About</Link></NavItem>
-      <NavItem eventKey={2}><Link to="/page-3/">Contact-Us</Link></NavItem>
+      <LinkContainer to="/page-2/"><NavItem eventKey={1}>About</NavItem></LinkContainer>
+      <LinkContainer to="/page-3/"><NavItem eventKey={2}>Contact-Us</NavItem></LinkContainer>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
