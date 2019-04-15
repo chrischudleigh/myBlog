@@ -4,7 +4,7 @@ import { Navbar, Nav, NavItem } from 'react-bootstrap';
 const myNav= () => (
   <Navbar collapseOnSelect>
   <Navbar.Header>
-    <Navbar.Brand href="#">
+    <Navbar.Brand href="https://chudleigh.netlify.com">
     Web Bytes
     </Navbar.Brand>
     <Navbar.Toggle />
