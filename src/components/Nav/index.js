@@ -12,7 +12,7 @@ const myNav= () => (
   <Navbar.Collapse>
     <Nav>
     <LinkContainer to="/page-2/"><NavItem eventKey={1}>About</NavItem></LinkContainer>
-    <LinkContainer to="/page-3/"><NavItem eventKey={2}>Contact-Us</NavItem></LinkContainer>
+    <LinkContainer to="/page-3/"><NavItem eventKey={2}>Contact Us</NavItem></LinkContainer>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
