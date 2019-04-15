@@ -5,7 +5,7 @@ const SecondPage = () => (
   <div>
     <h1>About</h1>
     
-    <p>I am web developer/designer from Brisbane, Australia.</p>
+    <p>A site using Contentful, Netlify, and Gatsbyjs.</p>
 
     <Link to="/">Go back to the homepage</Link>
   </div>
